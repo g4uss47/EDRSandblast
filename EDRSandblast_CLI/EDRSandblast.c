@@ -215,11 +215,11 @@ Dump options:\n\
     BOOL verbose = FALSE;
     BOOL removeVulnDriver = TRUE;
     BOOL restoreCallbacks = TRUE;
-    BOOL userMode = FALSE;
+    BOOL userMode = TRUE;
     BOOL internet = FALSE;
-    enum UNHOOK_METHOD_e unhook_method = UNHOOK_WITH_NTPROTECTVIRTUALMEMORY;
-    BOOL directSyscalls = FALSE;
-    BOOL kernelMode = FALSE;
+    enum UNHOOK_METHOD_e unhook_method = UNHOOK_WITH_DIRECT_SYSCALL;
+    BOOL directSyscalls = TRUE;
+    BOOL kernelMode = TRUE;
     int lpExitCode = EXIT_SUCCESS;
     struct FOUND_EDR_CALLBACKS* foundEDRDrivers = NULL;
     BOOL ETWTIState = FALSE;
